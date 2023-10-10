@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+     /*margin: 0; 
+          The margin property sets the space outside an element. In this case, it sets the margin of all elements to 0, which means there will be no extra space around any element.
+     font-family: Arial;
+          The font-family property sets  the font to be used for the text inside an element. In this case, it sets the font of all elements to "Arial," which is a common font available on most computers.
+     border: border-box;
+        This is a mistake in the CSS code. It should be box-sizing: border-box;. The box-sizing property is used to control how the width and height of an element are calculated. When set to border-box, it includes the padding and border in the element's total width and height. This helps maintain the element's size even when padding and borders are added.*/
+}
+.navbar{
+    height:60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;   /*display--
+    This defines a flex container/div; inline or block depending on 
+    the given value. It enables a flex context for all its direct children. */
+    align-items: center;  /*vertical alignment of nav divs*/
+    justify-content: space-evenly;/*spread all divs in it evenly if 
+    we add one more dive it will adjest it self wiht smae spaces in btw */
+}
+.nav-logo  
+{
+    height:50px;
+    width:130px;
+    background-color:007185;
+
+}
+.logo{
+ background-image: url(amazon_logo.png) ;
+ background-size: cover; /*logo cover entire nav-log division -->*/
+ height:60px;
+ width:128.78px;
+}
+.border{
+    border: 1px solid transparent  ; /*if we put > 1 if we hover even icon moves
+                                       if we remove this icon moves*/
+}
+.border:hover
+{
+    border: 1px solid white;
+}
+
+
+/*2nd box-----------------------------------------------------------------------------------------------*/
+.upper_para{
+    
+    color: #cccccc;
+     font-size: 12px;
+     margin-left: 15px;
+
+}
+.lower_para{
+    font-size: 14px;
+    color: #ffffff;
+}
+/*3rd box-------------------------------------------------------------------------------------------------*/
+
+.fullsearch_box{
+    background-color: #0F1111;
+    height: 40px ;
+    display: flex;
+    width: 700px;
+    margin-left: 5px;
+  
+}
+
+.categories{
+  width: 50px;
+  border:none;
+  background-color: #f3f3f3;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+ 
+}
+
+.searchbox{
+    width: 100%;  /* covers remainng area in .full search box */
+    border: none;
+    font-size: .9rem;
+   
+}
+.magnifing_symbol{
+    background-color: orange; /* background colour of this div  */
+    color: #0F1111; /* colour of icon /items  */
+    width:50px;
+    height:40px;    
+    display: flex;
+    justify-content: center; /*makes hirizontally center initially at top left */
+    /* Pack items around the center */
+    align-items: center; /*makes vertically centre   from top center */
+    border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/*learn about flex box short video or udemy
+about select input option placeholedr*/
+                          /*43:28 timestamp 
+                          look csstricks,csstricsk flexbox ,flex box frogy , css grid  */
+
+ /*4th box ---------------------------------------------------------------------------------------------*/
+
+ .signin{
+
+    font-size: 12px;
+    
+ }
+ .account
+ {
+    font-size: 14px;
+   font-weight: bolder;
+ }
+ /*4th box  cart---------------------------------------------------------------------------------------------*/
+.cart {
+    color: whitesmoke;
+    
+    font-weight: bolder;
+}
+.cart i
+{
+    font-size: 26px;
+   
+}
+
+
+/*2nd nav bar-------------------------------------------------------------*/
+.nav-bar2
+{
+ height: 39px;
+ background-color:#232f3e;
+ color: rgb(255, 255, 255);
+ display: flex;  /*all div come horizontally*/
+
+ 
+}
+
+.box1 
+{
+    display: flex;
+    margin-left: 25px;
+    align-items:center;
+}
+ 
+.box1 i
+{
+    font-size: 20px;
+   
+}
+.box1 span{
+    font-size:14px;
+    margin-left:5px;
+}
+
+.text
+{
+    display:flex;
+    align-items:center;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.box3 {
+    margin-left: auto; /* This pushes box3 to the end of the flex container */
+}
+   
+/**body boxes section--------------------------------------------------------**/  
+  
+
+.middle_all{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    background-color: #e3e7e7;
+    gap: 10px 10px;
+    margin-top: -250px;
+ 
+}
+
+.middle_boxsections
+{
+    border:1px solid black;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.middle_boxsections{
+  height: 385px;
+  width: 306px;
+  background-color: white;
+  border-color: white;
+
+}
+.middle_boxsections h4
+{
+   margin-left: 20px;
+}
+.boxa{
+    height: 385px;
+    width: 306px;
+    background-color: white;
+    border-color: white;
+    display:flex;
+    align-content:space-around;
+    justify-content: space-evenly;
+    font-size: 12px;
+    flex-wrap: wrap;
+
+}
+.boxa h4
+{
+    font-size:16px;
+}
+.parts{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-size: 12px;
+}
+/*FOOTER SECTION-----------------------------------------------------------------*/
+.a{
+    padding: 16px 16px;
+    background-color: #485769;
+    color:white;
+    font-size: 13px;
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+   
+}
+.listsbox
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px 60px 0px;
+    background-color: #232f3e;
+    color:#DDDDDD;
+    
+}
+.listsbox h4{
+    color:white;
+    margin-bottom: 15px;
+    
+    
+}
+.listsbox li
+{
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
